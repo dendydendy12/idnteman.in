@@ -1,0 +1,103 @@
+*{
+    color: #3a3a3a;
+  }
+  
+  footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p{
+    color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    
+    border-radius: 60px;
+    ;
+  }
+  
+  .contact-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 55px;
+    margin-left: 20px;
+    box-shadow: 1px 1px 7px 0 #0076f0;
+  }
+  
+  .contact-left h5{
+    text-align: center;
+    color: #555;
+  }
+  
+  .contact-right {
+    width: 50%;
+  }
+  
+  .contact-right img{
+    width: 100%;
+    height: 600px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0076f0;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-size: 15px;
+   
+    border-radius: 15px;
+  }
+  
+  button:hover {
+    background-color: #0060d0;
+  }
+  
+  button i{
+    margin-right: 10px;
+    color: #fff;
+  }
+  
+  textarea {
+    color: #555;
+  }
+  
+  /* Tampilan tablet */
+  @media screen and (max-width: 768px) {
+    .container{
+      margin: 0;
+      padding: 30px;
+    }
+    .contact-left {
+      width: 100%;
+    }
+    .contact-right {
+      display: none;
+    }
+    .input-group {
+      width: 100%;
+    }
+  }

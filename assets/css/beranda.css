@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;1,400;1,500&display=swap');
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 110px;
+}
+.container h1{
+    font-size:70px;
+    color: #2F59A7;
+}
+.container span{
+    position: absolute;
+    top: 330px;
+    font-size: 15px;
+    font-weight: 100;
+}
+.container .btn-about{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #2F59A7;
+    width: 100px;
+    color:white;
+    cursor:pointer;
+}
+.container .btn-about:hover{
+    background-color:blue;
+}
+.jumbroton h2{
+    text-align: center;
+}
+.jumbroton ul{
+    display: flex;
+}
+.jumbroton ul li{
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style: none;
+    width: 300px;
+    background-color: #2F59A7;
+    color: white;
+    padding: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-top: 10px;
+
+}
+.jumbroton ul li .img01{
+    position: absolute;
+    top: 720px;
+    left: 20px;
+    border-radius: 50%;
+}
+.jumbroton ul li .img02{
+    position: absolute;
+    top: 720px;
+    left: 350px;
+    border-radius: 50%;
+}
+
+.jumbroton ul li .img03{
+    position: absolute;
+    top: 720px;
+    left: 650px;
+    border-radius: 50%;
+}
+.jumbroton ul li .img04{
+    position: absolute;
+    top: 720px;
+    left: 970px;
+    border-radius: 50%;
+}
+.logo{
+    border-radius: 50%;
+}
+.img01{
+    position: absolute;
+    top: 720px;
+    left: 10px;
+}
+.img02{
+    position: absolute;
+    top: 720px;
+    left: 320px;
+}
+.img03{
+    position: absolute;
+    top: 720px;
+    left: 650px;
+}
+.img04{
+    position: absolute;
+    top: 720px;
+    left: 980px;
+}

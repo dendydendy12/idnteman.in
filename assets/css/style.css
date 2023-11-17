@@ -1,0 +1,248 @@
+* {
+  font-family: "Overpass", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.text-blue {
+  color: #0076f0;
+}
+
+.text-dark {
+  color: #3c3c3c;
+  
+}
+
+.text-muted {
+  color: #969ea6;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-yellow {
+  color: #ffc107;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-blue {
+  background-color: #0099ff;
+}
+
+.bg-white {
+  background-color: #624f4f;
+}
+
+.bg-aqua {
+  background-color: #c1e7ec;
+}
+
+/* Navbar */
+nav {
+  padding: 0.7rem 3rem;
+  background-color: 0099ff;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px #F7EFE5;
+}
+
+.nav-menu {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.nav-menu li {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #000000;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-bottom: 2px solid transparent; 
+   transition: border-bottom 0.3s ease;
+
+}
+
+.nav-menu li a:hover {
+  border-bottom: 2px solid  #F7EFE5; 
+    color: #2F59A7;
+    
+}
+
+/* Hamburger menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #58565649;
+  border-radius: 5px;
+}
+
+.active-nav {
+  background-color: #aca9a952;
+  padding: 5px 10px;
+  border-radius: 50px;
+  height: 30px;
+}
+
+
+
+.container {
+  margin: 5rem 5vw;
+}
+
+.border {
+  border: 1px solid #888;
+}
+
+footer {
+  background-color: #000000;
+  padding: 0.5rem 3rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 25px;
+}
+
+footer p a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Tampilan tablet */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  nav{
+      align-items: center;
+  }
+
+  .nav-menu {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 65px;
+    flex-direction: column;
+    background-color: #fefefe;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    align-items: center;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+
+  .nav-menu li a {
+    font-size: 14px;
+  }
+
+  .nav-menu.active {
+    visibility: visible;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+
+  }
+  
+
+  .menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+
+
+
+
+/* Tampilan smartphone */
+@media(max-width: 576px) {
+        html {
+            font-size: 12px;
+        }
+        .container .title h1{
+            font-size: 30px;
+            text-align: center;
+            margin-left: 36px;
+        }
+        .container img{
+            display: none;
+        }
+        .container .title span{
+            position: absolute;
+            top:200px;
+        }
+        .container .title button{
+            margin-left: 80px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        .container .title button:hover{
+          background-color: blue;
+      }
+        .jumbroton h1{
+            margin-left: 30px; 
+            position: absolute;
+            top: 300px;    
+            left: 170px; 
+            margin-top:10px;
+            margin-bottom:100px ;
+        }
+        .jumbroton .logo{
+          margin: 10px;
+        }
+        .tulisan-kecil {
+          position: absolute;
+          display: none;
+        }
+       .jumbroton ul{
+          flex-direction: column;
+          display: grid;
+          gap:-10;
+          margin-left:50px
+       }   
+       .jumbroton ul li{
+        margin-bottom:5px;  
+      }     
+      
+        
+  }
+
+
